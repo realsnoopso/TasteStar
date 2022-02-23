@@ -1,0 +1,9 @@
+body {
+            font-family: 'Noto Sans KR', sans-serif;
+        }
+
+.contents {
+    text-align: center;
+    width: fit-content;
+    margin: auto;
+}

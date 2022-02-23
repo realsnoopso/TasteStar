@@ -1,8 +1,6 @@
 # mongoDB setting
 import certifi
 import pymongo
-import time
-import schedule
 
 ca = certifi.where()
 client = pymongo.MongoClient("mongodb+srv://sparta19:toyproject@cluster0.rrg9h.mongodb.net/myFirstDatabase?retryWrites=true&w=majority", tlsCAFile=ca)
@@ -15,6 +13,7 @@ headers = {'User-Agent' : 'Mozilla/5.0 (Windows NT 10.0; Win64; x64)AppleWebKit/
 
 # 1. mongoDB에서 저장된 구 리스트 불러오기
 guName = list(db.districts.find({},{'_id':False}))
+print(guName)
 
 # 2. html 긁어오는 것을 반복하기
 for i in guName:
