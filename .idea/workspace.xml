@@ -5,20 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3b7307eb-590e-4abc-bcf6-b68b0ddae758" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/99_mingyeong/mangoList.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/TasteStar.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/TasteStar.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mingyeong/Test.py" beforeDir="false" afterPath="$PROJECT_DIR$/99_mingyeong/Test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mingyeong/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/99_mingyeong/app.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mingyeong/mangoDetail.py" beforeDir="false" afterPath="$PROJECT_DIR$/99_mingyeong/mangoDetail.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mingyeong/mangoList.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mingyeong/script.py" beforeDir="false" afterPath="$PROJECT_DIR$/99_mingyeong/script.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mingyeong/update.py" beforeDir="false" afterPath="$PROJECT_DIR$/99_mingyeong/update.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -106,7 +94,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1645623475313</updated>
-      <workItem from="1645623480745" duration="3327000" />
+      <workItem from="1645623480745" duration="3896000" />
     </task>
     <servers />
   </component>
