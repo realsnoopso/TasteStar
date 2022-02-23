@@ -7,10 +7,12 @@
 
 
 ### Prerequisite
-* certifi
+* flask
 * pymongo
+* dnspython
+* certifi
+* bs4
 * requests
-* BeautifulSoup
 
 ### Files
 * mingyeong
