@@ -18,7 +18,7 @@ print(guName)
 # 2. html 긁어오는 것을 반복하기
 for i in guName:
     district = i['name']
-    # print (district)
+    print(district)
     for ii in district:
         list = BeautifulSoup(requests.get('https://www.mangoplate.com/search/서울시%20{}'.format(ii), headers = headers).text, 'html.parser').select('body > main > article > div.column-wrapper > div > div > section > div.search-list-restaurants-inner-wrap > ul > li')
 
@@ -38,4 +38,6 @@ for i in guName:
                 'district': district
             }
 
-            db.restaurants.insert_one(output)
+            print(name, kind, starMango, address, mangoID)
+            doc = {'name': 'bobby', 'age': 21}
+            db.users.insert_one(doc)
