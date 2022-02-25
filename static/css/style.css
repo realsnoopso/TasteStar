@@ -7,23 +7,70 @@
     background-color: #fff !important;
 }
 
-/*index.html*/
+/*layout.html*/
+
 body {
     font-family: 'Noto Sans KR', sans-serif;
     margin-top: 56px;
 }
 
 .contents {
+    width: 100%;
+    max-width: 100%;
+    padding: 100px 36px;
+}
+
+/*index.html*/
+
+/*상단 텍스트 및 이미지 영역*/
+
+.index-box {
     text-align: center;
     width: fit-content;
-    margin: 0 auto;
-    padding: 100px 0;
+    margin: 0px auto 60px;
 }
 
-.paragraph {
-    margin-top: 12px;
+.index-box > .title {
+    margin-bottom: 12px;
 }
 
-.text-wrap > a {
-    text-decoration: none;
+.index-box > .paragraph {
+
+    margin-bottom: 36px;
 }
+
+.main-img {
+    width: 710px;
+    height: 400px;
+    background-image: url("https://c.tenor.com/bfxcDYAwqdAAAAAC/eating-food.gif");
+    background-size: cover;
+}
+
+@media screen and (max-width: 768px) {
+  .main-img {
+    width: 100%;
+    height: 206px;
+    }
+}
+
+/*구별 link 리스트 영역*/
+
+.row {
+    margin-bottom: 20px;
+}
+
+.district-link {
+    width: 100%;
+    height: 60px;
+}
+
+@media screen and (max-width: 768px) {
+  .col-12 {
+      margin-bottom: 20px;
+  }
+  .col-12:last-child {
+    margin-bottom: 0px;
+  }
+}
+
+
