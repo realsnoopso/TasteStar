@@ -17,7 +17,13 @@ body {
 .contents {
     width: 100%;
     max-width: 100%;
-    padding: 100px 36px;
+    padding: 80px 36px;
+}
+
+@media screen and (max-width: 576px) {
+    .contents {
+        padding: 48px 36px;
+    }
 }
 
 /*index.html*/
@@ -27,7 +33,7 @@ body {
 .index-box {
     text-align: center;
     width: fit-content;
-    margin: 0px auto 60px;
+    margin: 0px auto 80px;
 }
 
 .index-box > .title {
@@ -35,7 +41,6 @@ body {
 }
 
 .index-box > .paragraph {
-
     margin-bottom: 36px;
 }
 
@@ -49,6 +54,7 @@ body {
 @media screen and (max-width: 576px) {
     .index-box {
         width: 100%;
+        margin-bottom: 48px;
     }
     .main-img {
         width: 100%;
