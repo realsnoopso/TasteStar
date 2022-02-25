@@ -1,0 +1,29 @@
+/*dlayout.html*/
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 16px 24px;
+    background-color: #fff !important;
+}
+
+/*index.html*/
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+    margin-top: 56px;
+}
+
+.contents {
+    text-align: center;
+    width: fit-content;
+    margin: 0 auto;
+    padding: 100px 0;
+}
+
+.paragraph {
+    margin-top: 12px;
+}
+
+.text-wrap > a {
+    text-decoration: none;
+}
