@@ -5,39 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3b7307eb-590e-4abc-bcf6-b68b0ddae758" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/99_mingyeong/district.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/district/dobong.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/district/dongdaemun.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/district/dongjak.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/district/eunpyeong.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/district/gangbuk.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/district/gangdong.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/district/gangnam.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/district/gangseo.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/district/geumcheon.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/district/guro.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/district/gwanak.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/district/gwangjin.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/district/jongno.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/district/jung.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/district/jungnang.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/district/mapo.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/district/nowon.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/district/seocho.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/district/seodaemun.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/district/seongbuk.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/district/seongdong.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/district/songpa.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/district/yangcheon.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/district/yeongdeungpo.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/district/yongsan.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/layout-district.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/layout.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/style.css" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/list.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/layout.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/layout.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -202,7 +172,7 @@
       <updated>1645623475313</updated>
       <workItem from="1645623480745" duration="4424000" />
       <workItem from="1645674660073" duration="8972000" />
-      <workItem from="1645769402863" duration="10307000" />
+      <workItem from="1645769402863" duration="11382000" />
     </task>
     <servers />
   </component>
@@ -222,7 +192,7 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/TasteStar$test2.coverage" NAME="test2 Coverage Results" MODIFIED="1645683490711" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/99_mingyeong" />
-    <SUITE FILE_PATH="coverage/TasteStar$app.coverage" NAME="app Coverage Results" MODIFIED="1645786195300" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/TasteStar$app.coverage" NAME="app Coverage Results" MODIFIED="1645786204859" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/TasteStar$mangoList.coverage" NAME="mangoList Coverage Results" MODIFIED="1645675172853" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/99_mingyeong" />
     <SUITE FILE_PATH="coverage/TasteStar$test3.coverage" NAME="test3 Coverage Results" MODIFIED="1645683435842" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/99_mingyeong" />
   </component>
