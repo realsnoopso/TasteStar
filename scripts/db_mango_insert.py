@@ -22,10 +22,16 @@ for district in districts:
     for restaurant in restaurants:
         name = restaurant.select_one('figure > figcaption > div > a > h2').text.split('(')[0].strip()
         kind = restaurant.select_one('figure > figcaption > div > p.etc > span').text
-        starMango = restaurant.select_one('figure > figcaption > div > strong').text
         address = restaurant.select_one('figure > a > div > img')['alt'].split('- ')[1]
         mangoID = restaurant.select_one('figure > a')['href'].split('/')[2]
         district = address.split(' ')[1]
+        starMango = restaurant.select_one('figure > figcaption > div > strong').text
+
+        if starMango == '':
+            starMango = 0
+        else:
+            starMango = float(starMango)
+
         output = {
             'address': address,
             'kind': kind,
@@ -35,5 +41,5 @@ for district in districts:
             'district': district
         }
 
-        print(district, '-', name, kind, starMango, address, mangoID)
+        # print(district, '-', name, kind, starMango, address, mangoID)
         db.restaurants.insert_one(output)
