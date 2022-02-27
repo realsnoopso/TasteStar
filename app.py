@@ -1,5 +1,8 @@
 # flask setting
-from flask import Flask, render_template
+from flask import Flask, render_template, request, jsonify, json
+import certifi
+import time
+from pymongo import MongoClient
 app = Flask(__name__)
 
 # mongoDB setting
@@ -14,107 +17,75 @@ def home():
    return render_template('index.html')
 
 # 구별 링크
+@app.route('/detail')
+def detail():
+   dist = request.args.get('dist');
+   return render_template('listpage.html', dist=dist)
 
-@app.route('/jongno')
-def jongno():
-   return render_template('district/jongno.html')
+@app.route('/detail/district', methods=["GET"])
+def district() :
+   searchDist = request.args.get("district")
+   district_list = list(db.restaurants.find({'district':searchDist}, {'_id':False}).sort('starTotal', -1))
+   result = [];
+   for dining in district_list :
+      item = {}
+      item["restaurant_name"] = dining['name']
+      item["restaurant_addr"] = dining['address']
+      item["restaurant_kind"] = dining['kind']
+      item["restaurant_district"] = dining['district']
+      item["total_score"] = dining['starTotal']
+      item["mango_score"] = dining['starMango']
+      item["dining_score"] = dining['starDining']
+      # print(db.imgs.find_one({"mangoID":dining['mangoID']}))
+      item["restaurant_img"] = db.imgs.find_one({"mangoID":dining['mangoID']})['url']
+      item["mangoId"] = dining['mangoID']   # 망고ID
+      result.append(item)
+   return jsonify({'result': result})
 
-@app.route('/jung')
-def jung():
-   return render_template('district/jung.html')
+## 태성 code ##
+@app.route('/detail/resDetail', methods=["GET"])
+def detailPage():
+   id = request.args.get('id');
+   return render_template('review.html', id = json.dumps(id))
 
-@app.route('/yongsan')
-def yongsan():
-   return render_template('district/yongsan.html')
+@app.route("/resDetail", methods=["GET"])
+def res_Detail():
+    resDetail = db.restaurants.find_one({'mangoID' : request.args.get('mangoId')},{'_id':False})
+    imgList = list(db.imgs.find({'mangoID' : request.args.get('mangoId')},{'_id':False}))
+    return jsonify({'resDetail' : resDetail, 'imgList' : imgList})
 
-@app.route('/seongdong')
-def seongdong():
-   return render_template('district/seongdong.html')
+@app.route("/review", methods=["GET"])
+def review_get():
+    rows = list(db.reviews.find({}, {'_id': False}))
+    bad = len(list(db.reviews.find({"score":"별로였어요"}, {'_id': False})))
+    soso = len(list(db.reviews.find({"score":"괜찮았어요"}, {'_id': False})))
+    good = len(list(db.reviews.find({"score":"맛있었어요"}, {'_id': False})))
+    total = len(rows)
 
-@app.route('/gwangjin')
-def gwangjin():
-   return render_template('district/gwangjin.html')
+    return jsonify({'rows': rows,
+                    'bad' : bad,
+                    'soso' : soso,
+                    'good' : good,
+                    'total': total})
 
-@app.route('/dongdaemun')
-def dongdaemun():
-   return render_template('district/dongdaemun.html')
+@app.route("/review", methods=["POST"])
+def review_post():
+    review_nickname_receive = request.form['review_nickname_give']
+    review_comment_receive = request.form['review_comment_give']
+    emotion_receive = request.form['emotion_give']
 
-@app.route('/jungnang')
-def jungnang():
-   return render_template('district/jungnang.html')
+    now = time.localtime()
+    detail_now = "%04d/%02d/%02d %02d:%02d:%02d"%(now.tm_year, now.tm_mon, now.tm_mday, now.tm_hour, now.tm_min, now.tm_sec)
 
-@app.route('/seongbuk')
-def seongbuk():
-   return render_template('district/seongbuk.html')
+    doc = {
+        'nickname': review_nickname_receive,
+        'comment' : review_comment_receive,
+        'score' : emotion_receive,
+        'time' : detail_now
+    }
+    db.reviews.insert_one(doc)
 
-@app.route('/gangbuk')
-def gangbuk():
-   return render_template('district/gangbuk.html')
-
-@app.route('/dobong')
-def dobong():
-   return render_template('district/dobong.html')
-
-@app.route('/nowon')
-def nowon():
-   return render_template('district/nowon.html')
-
-@app.route('/eunpyeong')
-def eunpyeong():
-   return render_template('district/eunpyeong.html')
-
-@app.route('/seodaemun')
-def seodaemun():
-   return render_template('district/seodaemun.html')
-
-@app.route('/mapo')
-def mapo():
-   return render_template('district/mapo.html')
-
-@app.route('/yangcheon')
-def yangcheon():
-   return render_template('district/yangcheon.html')
-
-@app.route('/gangseo')
-def gangseo():
-   return render_template('district/gangseo.html')
-
-@app.route('/guro')
-def guro():
-   return render_template('district/guro.html')
-
-@app.route('/geumcheon')
-def geumcheon():
-   return render_template('district/geumcheon.html')
-
-@app.route('/yeongdeungpo')
-def yeongdeungpo():
-   return render_template('district/yeongdeungpo.html')
-
-@app.route('/dongjak')
-def dongjak():
-   return render_template('district/dongjak.html')
-
-@app.route('/gwanak')
-def gwanak():
-   return render_template('district/gwanak.html')
-
-@app.route('/seocho')
-def seocho():
-   return render_template('district/seocho.html')
-
-@app.route('/gangnam')
-def gangnam():
-   return render_template('district/gangnam.html')
-
-@app.route('/songpa')
-def songpa():
-   return render_template('district/songpa.html')
-
-@app.route('/gangdong')
-def gangdong():
-   return render_template('district/gangdong.html')
-
+    return jsonify({'msg': '댓글이 추가되었습니다!!'})
 
 
 if __name__ == '__main__':

@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+            crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>임시제목입니다.</title>
+    <style>
+        .total_review_count {
+            font-weight: bold;
+            float: left;
+            font-size: 25px;
+            margin-left: 140px;
+        }
+
+        ul li {
+            max-width: 1000px;
+            padding-right: 5px;
+            list-style-type: none;
+            float: right;
+            margin: auto;
+            font-size: 20px;
+        }
+
+        .review_box {
+            border: 1.5px black solid;
+            border-radius: 6px;
+            width: 500px;
+            padding: 10px;
+            margin: 150px auto 0px auto;
+        }
+
+        .list-group {
+            margin: auto;
+            width: 800px;
+            padding-top: 150px;
+            position: static;
+        }
+
+        .header_detail_reaction {
+            padding-right: 100px;
+            margin-right: 50px;
+        }
+
+        .each_detail_reaction {
+            float: right;
+            margin: auto;
+        }
+
+
+    </style>
+    <script >
+        $(document).ready(function () {
+            show_resDetail();
+            show_review();
+        });
+
+        function show_resDetail() {
+            var mangoid = JSON.parse("{{id}}");
+            console.log(mangoid)
+
+            $.ajax({
+                type: 'GET',
+                url: "/resDetail?mangoId="+mangoid,
+                dataType: 'json',
+                data: {},
+                success: function (res) {
+                    // console.log(res)
+                    let resDetail = res['resDetail']
+                    let address = resDetail['address']
+                    let district = resDetail['district']
+                    let kind = resDetail['kind']
+                    let name = resDetail['name']
+                    let starMango = resDetail['starMango']
+                    let starDining = resDetail['starDining']
+
+                    let imgList = res['imgList']
+
+                    let temp_html = `
+                                        <h1>${name}</h1>
+                                        <table>
+                                            <tbody>
+                                                <tr>
+                                                    <th>
+                                                        주소
+                                                    </th>
+                                                    <td>
+                                                    ${address}
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th>
+                                                        음식종류
+                                                    </th>
+                                                    <td>
+                                                    ${kind}
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th>
+                                                        영업시간
+                                                    </th>
+                                                    <td>
+
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th>
+                                                        전화번호
+                                                    </th>
+                                                    <td>
+
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+
+                                        </table>
+
+                                     <strong><span>망고플레이트 : ${starMango}</span></strong>
+                                     <strong><span>다이닝코드 : ${starDining}</span></strong>`
+
+                    $('#restaurant').append(temp_html)
+
+                    for(let i = 0; i < imgList.length; i++){
+                        // console.log(imgList[i]);
+                        let temp_html2 = `<div style="float:right"><img class="img-detail" src=${imgList[i].url} width="100" height="100"></div>`
+
+                        $('#restaurant-photos').append(temp_html2)
+                    }
+
+                }
+            });
+        }
+
+        function show_review() {
+            $.ajax({
+                type: "GET",
+                url: "/review",
+                data: {},
+                success: function (response) {
+                    //포문 돌리기용
+                    let rows = response['rows']
+
+                    //DB 데이터를 list 길이로 카운트해서 클라에 뿌리기
+                    var total = response['total']
+                    var bad = response['bad']
+                    var soso = response['soso']
+                    var good = response['good']
+
+                    //전체 댓글 개수
+                    $('#total_count').text("전체 ("+total+")")
+
+                    //세부 댓글 개수
+                    $('#bad').text("별로다 ("+bad+")")
+                    $('#soso').text("괜찮다 ("+soso+")")
+                    $('#good').text("맛있다 ("+good+")")
+                    $('#total').text("전체 ("+total+")")
+
+                    for (i = 0; i < rows.length; i++) {
+                        let nickname = rows[i]['nickname']
+                        let comment = rows[i]['comment']
+                        let score = rows[i]['score']
+                        let time = rows[i]['time']
+
+                        if (score == '맛있었어요') {
+                            var temp_html = `<li class="list-group-item good">
+                                            <span style="font-weight: bold">닉네임 : ${nickname}<div class="each_detail_reaction">맛있었어요<p style="font-size:70px">&#128512;</p></div></span>
+                                            <small style="color: gray"><p>${time}</p></small>
+                                            <p>${comment}</p>
+                                        </li>`
+                        }
+                        else if (score == '괜찮았어요') {
+                            var temp_html = `<li class="list-group-item soso">
+                                            <span  style="font-weight: bold">닉네임 : ${nickname}<div class="each_detail_reaction">괜찮았어요<p style="font-size:70px">&#128528;</p></div></span>
+                                            <small style="color: gray"><p>${time}</p></small>
+                                            <p>${comment}</p>
+                                        </li>`
+                        }
+                        else if (score == '별로였어요') {
+                            var temp_html = `<li class="list-group-item bad">
+                                            <span  style="font-weight: bold">닉네임 : ${nickname}<div class="each_detail_reaction">별로였어요<p style="font-size:70px">&#128531;</p></div></span>
+                                            <small style="color: gray"><p>${time}</p></small>
+                                            <p>${comment}</p>
+                                        </li>`
+                        }
+                        $('#append_review').append(temp_html)
+                    }
+                }
+            })
+        }
+
+        function save_review() {
+            let review_nickname = $('#review_nickname').val()
+            let review_comment = $('#review_comment').val()
+            let emotion = $('input[name=flexRadioDefault]:checked').val();
+
+            $.ajax({
+                type: "POST",
+                url: "/review",
+                data: {
+                    review_nickname_give: review_nickname,
+                    review_comment_give: review_comment,
+                    emotion_give: emotion
+                },
+                success: function (response) {
+                    alert(response["msg"])
+                    window.location.reload()
+                }
+            });
+        }
+
+        function good_filter_review() {
+            if ($('.each_detail_reaction:contains("맛있었어요")')) {
+                $('.good').show();
+                $('.soso').hide();
+                $('.bad').hide();
+            }
+        }
+
+        function soso_filter_review() {
+            if ($('.each_detail_reaction:contains("괜찮았어요")')) {
+                $('.good').hide();
+                $('.soso').show();
+                $('.bad').hide();
+            }
+        }
+
+        function bad_filter_review() {
+            if ($('.each_detail_reaction:contains("별로였어요")')) {
+                $('.good').hide();
+                $('.soso').hide();
+                $('.bad').show();
+            }
+        }
+
+        function total_view_review() {
+            $('.good').show();
+            $('.soso').show();
+            $('.bad').show();
+        }
+
+        function openClose() {
+            if ($("#open_review_box").css("display") == "block") {
+                $("#open_review_box").hide();
+                $("#btn-post-box").text("댓글 추가 하기");
+            } else {
+                $("#open_review_box").show();
+                $("#btn-post-box").text("접기");
+            }
+        }
+    </script>
+</head>
+
+<body>
+<!--여기-->
+
+<hr>
+<!--맨위에 맛평가 통계 부분-->
+<header class="header">
+        <ul class="total_review_count" id="total_count"></ul>
+        <ul class="header_detail_reaction">
+        <li class="detail_soso_review_count"><input type="radio" onclick="bad_filter_review()" class="btn-check" name="btnradio" id="btnradio4" autocomplete="off">
+            <label class="btn btn-outline-primary" id="bad" for="btnradio4">별로다 (0)</label></li>
+
+        <li class="detail_soso_review_count"><input type="radio" onclick="soso_filter_review()" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off">
+            <label class="btn btn-outline-primary" id="soso" for="btnradio3">괜찮다 (0)</label></li>
+
+        <li class="detail_good_review_count"><input type="radio" onclick="good_filter_review()" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
+            <label class="btn btn-outline-primary" id="good" for="btnradio2">맛있다 (0)</label></li>
+
+        <li class="detail_total_review_count"><input type="radio" onclick="total_view_review()" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked>
+            <label class="btn btn-outline-primary" id="total" for="btnradio1">전체 (0)</label></li>
+
+        <li class="lead">
+            <button onclick="openClose()" id="btn-post-box" type="button" class="btn btn-primary">접기</button></li>
+    </ul>
+</header>
+
+<!--닉네임/후기/맛평가 후 댓글 다는 부분-->
+<div class="review_box" id="open_review_box">
+    <input id="review_nickname" class="nickname_input-control" type="text" placeholder="닉네임을 적어주세요">
+    <p></p>
+    <textarea cols="60" rows="10" id="review_comment" class="comment_input-control" type="text" placeholder="솔직한 후기를 적어주세요"></textarea>
+    <div class="form-check">
+        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" value="맛있었어요">
+        <label class="form-check-label" for="flexRadioDefault1">맛있었어요</label>
+    </div>
+    <div class="form-check">
+        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" value="괜찮았어요" checked>
+        <label class="form-check-label" for="flexRadioDefault2">괜찮았어요</label>
+    </div>
+    <div class="form-check">
+        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault3" value="별로였어요">
+        <label class="form-check-label" for="flexRadioDefault3">별로였어요</label>
+    </div>
+    <button onclick="save_review()" type="button" class="btn btn-outline-primary">댓글 달기</button>
+</div>
+
+<!--서버에서 뿌려주는 댓글들-->
+<div id="append_review" class="list-group list-group-flush" style="position: absolute;left:551.5px;padding-top: 50px;margin-top: 50px;">
+<hr style="border: none; height: 1.5px; background-color: red;">
+</div>
+</body>
+</html>
+
+<!--<p style="font-size:70px">&#128512;</p> 웃음-->
+<!--<p style="font-size:70px">&#128528;</p> 중간-->
+<!--<p style="font-size:70px">&#128531;</p> 별로-->

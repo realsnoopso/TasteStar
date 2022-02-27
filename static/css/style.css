@@ -1,17 +1,23 @@
-/*dlayout.html*/
+/*layout.html*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+    margin-top: 56px;
+}
+
 .navbar {
     position: fixed;
     top: 0;
     width: 100%;
     padding: 16px 24px;
     background-color: #fff !important;
-}
-
-/*layout.html*/
-
-body {
-    font-family: 'Noto Sans KR', sans-serif;
-    margin-top: 56px;
+    z-index: 999;
 }
 
 .contents {
@@ -86,3 +92,105 @@ body {
 }
 
 
+/*listpage.html*/
+
+#container {
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+
+#navbar {
+    width: 100%;
+    height: 80px;
+}
+
+.logoTop {
+    float: left;
+    width: 150px;
+    height: 50px;
+    line-height: 50px;
+    margin: 10px 20px;
+}
+
+.guBox {
+    float: right;
+    width: 200px;
+    height: 50px;
+    line-height: 50px;
+    text-align: right;
+    margin: 10px 20px;
+}
+
+#gulist {
+    width: 200px;
+    height: 30px;
+    font-weight: bold;
+}
+
+#title {
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    margin-top: 50px;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+#list-box {
+    width: 1200px;
+    margin: 120px auto 80px auto;
+}
+
+.list-box {
+    width: 1200px;
+    height: 230px;
+    margin: 30px auto;
+    border-bottom: 1px solid grey;
+}
+
+.list-box:hover {
+            cursor: pointer;
+            opacity: 50%;
+        }
+
+.rank {
+    float: left;
+    width: 150px;
+    height: 200px;
+    line-height: 200px;
+    text-align: center;
+}
+
+.mainImg {
+    float: left;
+    width: 200px;
+    height: 200px;
+}
+
+.mainImg img {
+    width: 200px;
+    height: 200px;
+}
+
+.detail {
+    float: left;
+    width: 500px;
+    height: 200px;
+    padding: 0 30px;
+}
+
+.detail p {
+    margin: 40px 0px;
+}
+
+.score {
+    float: right;
+    width: 300px;
+    height: 200px;
+}
+
+.score p {
+    margin: 40px 0;
+}
