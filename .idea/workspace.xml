@@ -9,7 +9,6 @@
       <change beforePath="$PROJECT_DIR$/static/css/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/index.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/static/css/listpage.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/listpage.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/static/css/review.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/review.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/listpage.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/listpage.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/review.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/review.html" afterDir="false" />
     </list>

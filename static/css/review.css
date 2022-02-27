@@ -9,6 +9,7 @@
     float: left;
     font-size: 20px;
     padding: 0;
+    margin-bottom: 24px;
 }
 
 ul li {
@@ -22,7 +23,7 @@ ul li {
 
 .review_box {
     width: 100%;
-    margin: 32px auto 0px auto;
+    margin: 12px auto 0px auto;
 }
 
 .review_box > div > textarea {
@@ -44,7 +45,7 @@ ul li {
 .list-group {
     margin: auto;
     width: 800px;
-    padding-top: 150px;
+    padding-top: 0px !important;
     position: static !important;
     width: 100%;
 }
@@ -54,6 +55,27 @@ ul li {
     padding: 20px 0;
     border-top: 1px solid rgba(0,0,0,0.1);
     border-bottom: 0px solid black;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+.comment-details {
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    margin: 0px 25px;
+    width: 40px;
+    font-size:48px;
+    height: 48px;
+    padding-top: 12px;
+}
+
+.each_detail_reaction {
+    flex: none;
+    order: 0;
+    flex-grow: 1;
+    margin: 0px 25px;
 }
 
 .header {
@@ -77,6 +99,7 @@ ul li {
     flex-direction: row;
     justify-content: left;
     align-items: flex-start;
+    margin-bottom: 28px;
 }
 
 .total_review_count {
@@ -110,7 +133,7 @@ ul li {
     padding: 0;
     -webkit-tap-highlight-color: transparent;
     display: block;
-    padding-top: 61px;
+    padding: 60px 0;
     position: relative;
 }
 
@@ -141,27 +164,27 @@ ul li {
 
 }
 
-@media screen and (max-width: 991px) {
-    .photo-box {
-        height: 480px;
-    }
-}
+/*@media screen and (max-width: 991px) {*/
+/*    .photo-box {*/
+/*        height: 480px;*/
+/*    }*/
+/*}*/
 
-@media screen and (max-width: 540px) {
-    .photo-box {
-        height: 1020px;
-    }
-}
+/*@media screen and (max-width: 540px) {*/
+/*    .photo-box {*/
+/*        height: 1020px;*/
+/*    }*/
+/*}*/
 
 .img-detail {
-    height: 100%;
+    height: fit-content;
     float:left;
     padding: 0 16px 16px;
 }
 
 .img-detail > div {
     width: 100%;
-    height: 100%;
+    height: 240px;
     background-size: cover;
 }
 
@@ -221,10 +244,30 @@ ul li {
     position: relative;
     -webkit-backface-visibility: hidden;
     width: 100%;
-    height: 240px;
+    height: 200px;
     left: 0px;
     display: block;
     transition: all 0ms ease 0s;
     transform: translate3d(0px, 0px, 0px);
     margin: 0;
+}
+
+@media screen and (max-width: 768px) {
+    .restaurant-photos {
+        height: 980px;
+    }
+}
+
+.img-detail:first-child {
+    padding-left: 0;
+}
+
+.img-detail:last-child {
+    padding-right: 0;
+}
+
+@media screen and (max-width: 768px) {
+    .img-detail {
+        padding: 0;
+    }
 }

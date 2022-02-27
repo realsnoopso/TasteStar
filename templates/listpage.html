@@ -4,7 +4,8 @@
 
 <div class="guBox">
     <form method="get" action="SelectServlet">
-        <select id="gulist" name="gulist" size="1">
+        <select id="gulist" name="gulist" size="1" class="form-select" >
+            <option selected disabled> </option>
             <option value="강남구">강남구</option>
             <option value="강동구">강동구</option>
             <option value="강북구">강북구</option>
@@ -62,7 +63,9 @@
                 for (let gu of guList) {
                     // console.log(gu)
                     if (gu.value === rows[0].restaurant_district) {
+                        // $('#gulist').text('');
                         gu.selected = true;
+
                     }
                 }
                 for (let i = 0; i < rows.length; i++) {

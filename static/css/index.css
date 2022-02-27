@@ -6,7 +6,6 @@
     text-align: center;
     width: fit-content;
     margin: 0px auto 80px;
-    padding: 0 32px;
 }
 
 .index-box > .title {
@@ -51,7 +50,6 @@
 
 @media screen and (max-width: 768px) {
     .container.index-list {
-        padding: 0 32px;
     }
     .col-12 {
         margin-bottom: 20px;

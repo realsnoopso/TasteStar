@@ -1,6 +1,6 @@
 {% extends 'layout.html' %}
 {% block content %}
-<div class="container">
+<div class="container review">
     <article class="restaurant_info">
         <div class="column-contents" id="restaurant">
         </div>
@@ -13,25 +13,28 @@
     <div class="header">
         <ul class="total_review_count" id="total_count"></ul>
         <ul class="header_detail_reaction">
-            <li class="detail_soso_review_count"><input type="radio" onclick="bad_filter_review()" class="btn-check"
-                                                        name="btnradio" id="btnradio4" autocomplete="off">
-                <label class="btn btn-outline-primary" id="bad" for="btnradio4">별로다 (0)</label></li>
-
-            <li class="detail_soso_review_count"><input type="radio" onclick="soso_filter_review()" class="btn-check"
-                                                        name="btnradio" id="btnradio3" autocomplete="off">
-                <label class="btn btn-outline-primary" id="soso" for="btnradio3">괜찮다 (0)</label></li>
-
-            <li class="detail_good_review_count"><input type="radio" onclick="good_filter_review()" class="btn-check"
-                                                        name="btnradio" id="btnradio2" autocomplete="off">
-                <label class="btn btn-outline-primary" id="good" for="btnradio2">맛있다 (0)</label></li>
-
             <li class="detail_total_review_count"><input type="radio" onclick="total_view_review()" class="btn-check"
                                                          name="btnradio" id="btnradio1" autocomplete="off" checked>
-                <label class="btn btn-outline-primary" id="total" for="btnradio1">전체 (0)</label></li>
-
-            <li class="lead">
-                <button onclick="openClose()" id="btn-post-box" type="button" class="btn btn-primary">접기</button>
+                <label class="btn btn-outline-secondary btn-sm" id="total" for="btnradio1">전체 (0)</label>
             </li>
+            <li class="detail_good_review_count"><input type="radio" onclick="good_filter_review()" class="btn-check"
+                                                        name="btnradio" id="btnradio2" autocomplete="off">
+                <label class="btn btn-outline-secondary btn-sm" id="good" for="btnradio2">맛있다 (0)</label>
+            </li>
+            <li class="detail_soso_review_count"><input type="radio" onclick="soso_filter_review()" class="btn-check"
+                                                        name="btnradio" id="btnradio3" autocomplete="off">
+                <label class="btn btn-outline-secondary btn-sm" id="soso" for="btnradio3">괜찮다 (0)</label>
+            </li>
+            <li class="detail_soso_review_count"><input type="radio" onclick="bad_filter_review()" class="btn-check"
+                                                        name="btnradio" id="btnradio4" autocomplete="off">
+                <label class="btn btn-outline-secondary btn-sm" id="bad" for="btnradio4">별로다 (0)</label>
+            </li>
+
+
+
+<!--            <li class="lead">-->
+<!--                <button onclick="openClose()" id="btn-post-box" type="button" class="btn btn-primary">접기</button>-->
+<!--            </li>-->
         </ul>
     </div>
 
@@ -53,17 +56,17 @@
             <div class="form-check">
                 <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1"
                        value="맛있었어요">
-                <label class="form-check-label" for="flexRadioDefault1">😀 맛있었어요</label>
+                <label class="form-check-label" for="flexRadioDefault1">😀 맛있다</label>
             </div>
             <div class="form-check">
                 <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2"
                        value="괜찮았어요" checked>
-                <label class="form-check-label" for="flexRadioDefault2">😐 괜찮았어요</label>
+                <label class="form-check-label" for="flexRadioDefault2">😐 괜찮다</label>
             </div>
             <div class="form-check">
                 <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault3"
                        value="별로였어요">
-                <label class="form-check-label" for="flexRadioDefault3">😓 별로였어요</label>
+                <label class="form-check-label" for="flexRadioDefault3">😓 별로다</label>
             </div>
         </div>
         <!--버튼-->
@@ -164,7 +167,7 @@
 
                 for (let i = 0; i < imgList.length; i++) {
                     console.log(imgList[i]);
-                    let temp_html2 = `<div class="col-12 col-sm-3 img-detail">
+                    let temp_html2 = `<div class="col-12 col-md-3 img-detail">
                                         <div id="img-detail" style="background-image: url(${imgList[i].url});"></div>
                                     </div>
                                     `
@@ -195,7 +198,7 @@
                 var good = response['good']
 
                 //전체 댓글 개수
-                $('#total_count').text("전체 (" + total + ")")
+                $('#total_count').text("후기 (" + total + ")")
 
                 //세부 댓글 개수
                 $('#bad').text("별로다 (" + bad + ")")
@@ -211,21 +214,31 @@
 
                     if (score == '맛있었어요') {
                         var temp_html3 = `<li class="list-group-item good">
-                                            <span style="font-weight: bold">${nickname}<div class="each_detail_reaction">맛있었어요<p style="font-size:70px">&#128512;</p></div></span>
-                                            <small style="color: gray"><p>${time}</p></small>
-                                            <p>${comment}</p>
+                                            <div class="comment-details" style="font-size:48px; height: 48px;">&#128512;</div>
+                                            <div class="each_detail_reaction">
+                                                <p style="font-weight: bold">${nickname}</p>
+                                                <small style="color: gray"><p>${time}</p></small>
+                                                <p>${comment}</p>
+                                            </div>
                                         </li>`
                     } else if (score == '괜찮았어요') {
                         var temp_html3 = `<li class="list-group-item soso">
-                                            <span  style="font-weight: bold">${nickname}<div class="each_detail_reaction">괜찮았어요<p style="font-size:70px">&#128528;</p></div></span>
-                                            <small style="color: gray"><p>${time}</p></small>
-                                            <p>${comment}</p>
+                                            <div class="comment-details" style="font-size:48px; height: 48px;">&#128528;</div>
+                                            <div class="each_detail_reaction">
+                                                <p style="font-weight: bold">${nickname}</p>
+                                                <small style="color: gray"><p>${time}</p></small>
+                                                <p>${comment}</p>
+                                            </div>
                                         </li>`
                     } else if (score == '별로였어요') {
                         var temp_html3 = `<li class="list-group-item bad">
-                                            <span  style="font-weight: bold">${nickname}<div class="each_detail_reaction">별로였어요<p style="font-size:70px">&#128531;</p></div></span>
-                                            <small style="color: gray"><p>${time}</p></small>
-                                            <p>${comment}</p>
+                                            <div class="comment-details" style="font-size:48px; height: 48px;">&#128531;</div>
+                                            <div class="each_detail_reaction">
+                                                <p style="font-weight: bold">${nickname}</p>
+                                                <small style="color: gray"><p>${time}</p></small>
+                                                <p>${comment}</p>
+                                            </div>
+
                                         </li>`
                     }
                     $('#append_review').append(temp_html3)
