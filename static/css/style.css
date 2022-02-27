@@ -300,21 +300,37 @@ ul li {
 }
 
 .restaurant_info {
-    padding: 0 0 56px 0;
+    padding: 0 0 80px 0;
 }
 
 .restaurant-score {
-    margin-bottom: 56px;
+    margin-bottom: 24px;
 }
 
 .restaurant-score > h4 {
-    margin-bottom: 12px;
+    margin-bottom: 16px;
+}
+
+.photo-box {
+
 }
 
 .img-detail {
     height: 100%;
     float:left;
+    padding: 0 16px;
+}
 
+.img-detail:first-child{
+    height: 100%;
+    float:left;
+    padding: 0;
+}
+
+.img-detail:last-child{
+    height: 100%;
+    float:left;
+    padding: 0;
 }
 
 .img-detail > div {

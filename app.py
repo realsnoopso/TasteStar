@@ -31,14 +31,11 @@ def review_get():
     good = len(list(db.reviews.find({"score":"맛있었어요","pageID":request.args.get('mangoId')}, {'_id': False})))
     total = len(rows)
 
-    pageid = db.reviews.find({"pageID": request.args.get('mangoId')}, {'_id': False})
-
     return jsonify({'rows': rows,
                     'bad' : bad,
                     'soso' : soso,
                     'good' : good,
-                    'total': total,
-                    'pageid': pageid
+                    'total': total
                     })
 
 @app.route("/detail/resDetail", methods=["POST"])
@@ -56,7 +53,7 @@ def review_post():
         'comment' : review_comment_receive,
         'score' : emotion_receive,
         'time' : detail_now,
-        'pageid': pageid
+        'pageID': pageid
     }
     db.reviews.insert_one(doc)
     return jsonify({'msg': '댓글이 추가되었습니다!!'})

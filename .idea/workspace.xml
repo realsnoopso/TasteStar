@@ -7,13 +7,13 @@
     <list default="true" id="3b7307eb-590e-4abc-bcf6-b68b0ddae758" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/static/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/listpage.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/listpage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/review.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/review.html" afterDir="false" />
     </list>
-    <list id="8ebe70ee-6db9-413b-a7c2-f9ac51056578" name="Changes by 82104" comment="" />
+    <list id="3c6311cf-f67f-41a1-84fe-65d04e19ff92" name="Changes by 82104" comment="">
+      <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
+    </list>
     <list id="7938ce57-16ed-45a2-bd09-fe954002b2d2" name="Changes by owner" comment="">
       <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/listpage.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/listpage.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/review.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/review.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,10 +52,11 @@
     </file-type-list>
   </component>
   <component name="LineStatusTrackerManager">
-    <file path="$PROJECT_DIR$/templates/listpage.html">
+    <file path="$PROJECT_DIR$/app.py">
       <ranges>
-        <range start1="34" end1="65" start2="34" end2="35" changelist="3b7307eb-590e-4abc-bcf6-b68b0ddae758" />
-        <range start1="123" end1="124" start2="93" end2="94" changelist="7938ce57-16ed-45a2-bd09-fe954002b2d2" />
+        <range start1="32" end1="34" start2="32" end2="32" changelist="3c6311cf-f67f-41a1-84fe-65d04e19ff92" />
+        <range start1="39" end1="41" start2="37" end2="38" changelist="3c6311cf-f67f-41a1-84fe-65d04e19ff92" />
+        <range start1="58" end1="59" start2="55" end2="56" changelist="7938ce57-16ed-45a2-bd09-fe954002b2d2" />
       </ranges>
     </file>
   </component>
@@ -163,7 +164,7 @@
       <workItem from="1645674660073" duration="8972000" />
       <workItem from="1645769402863" duration="17699000" />
       <workItem from="1645828428483" duration="12533000" />
-      <workItem from="1645926732879" duration="17829000" />
+      <workItem from="1645926732879" duration="18826000" />
     </task>
     <servers />
   </component>
@@ -191,7 +192,7 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/TasteStar$test2.coverage" NAME="test2 Coverage Results" MODIFIED="1645852168264" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/99_mingyeong" />
-    <SUITE FILE_PATH="coverage/TasteStar$app.coverage" NAME="app Coverage Results" MODIFIED="1645948011912" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/TasteStar$app.coverage" NAME="app Coverage Results" MODIFIED="1645949093209" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/TasteStar$mangoList.coverage" NAME="mangoList Coverage Results" MODIFIED="1645675172853" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/99_mingyeong" />
     <SUITE FILE_PATH="coverage/TasteStar$update_script.coverage" NAME="update_script Coverage Results" MODIFIED="1645853164821" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/99_mingyeong" />
     <SUITE FILE_PATH="coverage/TasteStar$test3.coverage" NAME="test3 Coverage Results" MODIFIED="1645683435842" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/99_mingyeong" />
