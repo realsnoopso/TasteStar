@@ -15,7 +15,10 @@ for score in starList :
     print(count, score['name'])
     count += 1
     print(count)
-    if (starD == 0) :
-        db.restaurants.update_one({'mangoID': score['mangoID']}, {'$set': {'starTotal': starM}})
+    if (starD == 0 or starM == 0) :
+        if(starD == 0) :
+            db.restaurants.update_one({'mangoID': score['mangoID']}, {'$set': {'starTotal': starM}})
+        elif(starM == 0) :
+            db.restaurants.update_one({'mangoID': score['mangoID']}, {'$set': {'starTotal': starD}})
     else:
         db.restaurants.update_one({'mangoID': score['mangoID']}, {'$set': {'starTotal': round((starM + starD)/2,1)}})
