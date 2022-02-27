@@ -36,8 +36,8 @@
 </div>
 
 
-<div class="container" id="container">
-    <article id="title"><h1>서울 <span id="dist"></span> 맛집 TOP20</h1></article>
+<div class="container listpage" id="container">
+    <article id="title"><h1>서울 <span id="dist"></span> 맛집 리스트</h1></article>
     <section id="list-box"></section>
 </div>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -74,15 +74,14 @@
                     let id = rows[i].mangoId;
 
                     let temp_html = `<div class="list-box" onclick="detailPage('${id}')">
-                                        <div class="rank"><h2>${i + 1}</h2></div>
-                                            <div class="mainImg"><img src="${rows[i].restaurant_img}" alt="restaurantsImg"></div>
+                                            <div role="img" alt="heart" style="background-image: url(${rows[i].restaurant_img})" class="mainImg"></div>
                                             <div class="detail">
-                                                <h3>${rows[i].restaurant_name}</h3>
+                                                <h3>${i + 1}. ${rows[i].restaurant_name}</h3>
                                                 <p>${rows[i].restaurant_addr}</p>
                                                 <p>${rows[i].restaurant_kind}</p>
                                             </div>
                                             <div class="score">
-                                                <h3>총 <span>${rows[i].total_score}</span>${starCnt}</h3>
+                                                <h5>총 <span>${rows[i].total_score}</span>${starCnt}</h5>
                                                 <p><img src="../static/img/logo-mango.svg"> ${rows[i].mango_score}</p>
                                                 <p><img src="../static/img/logo-dining.svg"> ${rows[i].dining_score}</p>
                                             </div>

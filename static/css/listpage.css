@@ -31,9 +31,24 @@
 }
 
 #gulist {
-    width: 200px;
-    height: 30px;
+    width: 160px;
+    height: fit-content;
     font-weight: bold;
+    border-color: rgba(0,0,0,0.2);
+    padding: 8px;
+    font-weight: 400;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+select::-ms-expand {
+	display: none;
+}
+.select {
+  -o-appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
 
 #title {
@@ -50,55 +65,127 @@
     margin: 120px 0;
 }
 
-.list-box {
-    width: 100%;
-    height: 280px;
-    margin: 0px auto;
-    padding: 40px 0;
-    border-bottom: 1px solid rgba(0,0,0,0.1);
-}
-
 .list-box:hover {
             cursor: pointer;
-            opacity: 50%;
+            background-color: rgba(0,0,0,0.015);
         }
 
-.rank {
-    float: left;
-    width: 150px;
-    height: 200px;
-    line-height: 200px;
-    text-align: center;
+/*리스트 컴포넌트*/
+
+
+
+
+
+
+
+
+.list-box {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    height: 240px;
+    padding: 32px;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
 }
+.list-box:last-child {
+    border-bottom: 0px solid rgba(0,0,0,0.1);
+}
+
+
 
 .mainImg {
-    float: left;
-    width: 200px;
-    height: 200px;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    height: 100%;
+    background-size: cover;
+    width: 240px;
+    margin-right: 48px;
 }
 
-.mainImg img {
-    width: 200px;
-    height: 200px;
-}
+
+
 
 .detail {
-    float: left;
-    width: 500px;
-    height: 200px;
-    padding: 0 30px;
+    flex: none;
+    order: 2;
+    flex-grow: 1;
 }
 
 .detail p {
-    margin: 40px 0px;
+    font-size: 1.1rem;
+    font-weight: 400;
+    margin: 20px 0px;
 }
 
 .score {
-    float: right;
-    width: 300px;
-    height: 200px;
-}
+    flex: none;
+    order: 3;
+    flex-grow: 0;
+    width: 240px;
+    }
+
+
 
 .score p {
-    margin: 40px 0;
+    margin: 28px 0;
 }
+
+/*반응형 디자인*/
+
+@media screen and (max-width: 1339px) {
+    .container.listpage {
+        max-width: 100%;
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    .container.listpage {
+        max-width: 1320px;
+    }
+}
+
+@media screen and (max-width: 960px) {
+    .score {
+        width: 160px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #list-box {
+        margin-top: 40px;
+    }
+
+    .list-box {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        height: fit-content;
+
+    }
+
+    .mainImg {
+        height: 320px;
+        width: 100%;
+        margin: 0;
+        margin-bottom: 28px;
+    }
+
+    .detail {
+        margin-bottom: 16px;
+    }
+
+    .detail > p {
+        margin: 8px 0;
+        font-size: 1em;
+    }
+
+    .score > p {
+        padding-right: 12px;
+        display: inline;
+    }
+
+}
+
+
+

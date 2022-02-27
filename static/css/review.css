@@ -1,4 +1,9 @@
 /*review.html*/
+
+.container.review {
+    padding: 0 36px;
+}
+
 .total_review_count {
     font-weight: bold;
     float: left;
@@ -53,10 +58,29 @@ ul li {
 
 .header {
     height: fit-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: flex-start;
+}
+
+@media screen and (max-width: 960px) {
+    .header {
+        flex-direction: column;
+    }
 }
 
 .header_detail_reaction {
     height: 38px;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: flex-start;
+}
+
+.total_review_count {
+    flex-grow: 1;
 }
 
 .each_detail_reaction {
@@ -105,7 +129,7 @@ ul li {
 }
 
 .restaurant-score {
-    margin-bottom: 24px;
+    margin-bottom: 36px;
 }
 
 .restaurant-score > h4 {
@@ -113,25 +137,26 @@ ul li {
 }
 
 .photo-box {
+    height: fit-content;
 
+}
+
+@media screen and (max-width: 991px) {
+    .photo-box {
+        height: 480px;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    .photo-box {
+        height: 1020px;
+    }
 }
 
 .img-detail {
     height: 100%;
     float:left;
-    padding: 0 16px;
-}
-
-.img-detail:first-child{
-    height: 100%;
-    float:left;
-    padding: 0;
-}
-
-.img-detail:last-child{
-    height: 100%;
-    float:left;
-    padding: 0;
+    padding: 0 16px 16px;
 }
 
 .img-detail > div {
@@ -196,7 +221,7 @@ ul li {
     position: relative;
     -webkit-backface-visibility: hidden;
     width: 100%;
-    height: 200px;
+    height: 240px;
     left: 0px;
     display: block;
     transition: all 0ms ease 0s;
