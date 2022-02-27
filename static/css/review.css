@@ -1,8 +1,8 @@
 /*review.html*/
 
-.container.review {
-    padding: 0 36px;
-}
+/*.container.review {*/
+/*    padding: 0 36px;*/
+/*}*/
 
 .total_review_count {
     font-weight: bold;
@@ -119,23 +119,23 @@ ul li {
 }
 
 .review-score > div {
-    padding-right: 16px;
+    padding-right: 8px;
 }
 
 /* 이진서-css */
-.contents {
-    word-wrap: break-word;
-    font-size: 100%;
-    line-height: 100%;
-    -webkit-text-size-adjust: 100%;
-    word-break: keep-all;
-    margin: 0;
-    padding: 0;
-    -webkit-tap-highlight-color: transparent;
-    display: block;
-    padding: 60px 0;
-    position: relative;
-}
+/*.contents {*/
+/*    word-wrap: break-word;*/
+/*    font-size: 100%;*/
+/*    line-height: 100%;*/
+/*    -webkit-text-size-adjust: 100%;*/
+/*    word-break: keep-all;*/
+/*    margin: 0;*/
+/*    padding: 0;*/
+/*    -webkit-tap-highlight-color: transparent;*/
+/*    display: block;*/
+/*    padding: 60px 0;*/
+/*    position: relative;*/
+/*}*/
 
 .column-contents {
     border: 0 none;
