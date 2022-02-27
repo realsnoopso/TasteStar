@@ -177,9 +177,12 @@
     }
 
     function show_review() {
+            var url_string = window.location.href;
+            var url = new URL(url_string);
+            var param = url.searchParams.get("id");
         $.ajax({
             type: "GET",
-            url: "/review",
+            url: "/detail/resDetail?mangoId="+param,
             data: {},
             success: function (response) {
                 //포문 돌리기용
@@ -207,25 +210,25 @@
                     let time = rows[i]['time']
 
                     if (score == '맛있었어요') {
-                        var temp_html = `<li class="list-group-item good">
+                        var temp_html3 = `<li class="list-group-item good">
                                             <span style="font-weight: bold">${nickname}<div class="each_detail_reaction">맛있었어요<p style="font-size:70px">&#128512;</p></div></span>
                                             <small style="color: gray"><p>${time}</p></small>
                                             <p>${comment}</p>
                                         </li>`
                     } else if (score == '괜찮았어요') {
-                        var temp_html = `<li class="list-group-item soso">
+                        var temp_html3 = `<li class="list-group-item soso">
                                             <span  style="font-weight: bold">${nickname}<div class="each_detail_reaction">괜찮았어요<p style="font-size:70px">&#128528;</p></div></span>
                                             <small style="color: gray"><p>${time}</p></small>
                                             <p>${comment}</p>
                                         </li>`
                     } else if (score == '별로였어요') {
-                        var temp_html = `<li class="list-group-item bad">
+                        var temp_html3 = `<li class="list-group-item bad">
                                             <span  style="font-weight: bold">${nickname}<div class="each_detail_reaction">별로였어요<p style="font-size:70px">&#128531;</p></div></span>
                                             <small style="color: gray"><p>${time}</p></small>
                                             <p>${comment}</p>
                                         </li>`
                     }
-                    $('#append_review').append(temp_html)
+                    $('#append_review').append(temp_html3)
                 }
             }
         })
@@ -236,13 +239,18 @@
         let review_comment = $('#review_comment').val()
         let emotion = $('input[name=flexRadioDefault]:checked').val();
 
+        var url_string = window.location.href;
+        var url = new URL(url_string);
+        var param = url.searchParams.get("id");
+
         $.ajax({
             type: "POST",
-            url: "/review",
+            url: "/detail/resDetail",
             data: {
                 review_nickname_give: review_nickname,
                 review_comment_give: review_comment,
-                emotion_give: emotion
+                emotion_give: emotion,
+                pageid: param
             },
             success: function (response) {
                 alert(response["msg"])
