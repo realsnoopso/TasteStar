@@ -5,11 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3b7307eb-590e-4abc-bcf6-b68b0ddae758" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/static/css/index.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/css/layout.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/css/listpage.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/css/review.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/average_star_mango_dining.py" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/average_star_mango_dining.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/layout.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/layout.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/listpage.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/listpage.html" afterDir="false" />
     </list>
     <list id="3c6311cf-f67f-41a1-84fe-65d04e19ff92" name="Changes by 82104" comment="" />
-    <list id="7938ce57-16ed-45a2-bd09-fe954002b2d2" name="Changes by owner" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -18,9 +23,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="CSS File" />
         <option value="HTML File" />
         <option value="Python Script" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -74,7 +79,7 @@
       <recent name="$PROJECT_DIR$/templates/district" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.average_star_mango_dining">
+  <component name="RunManager" selected="Python.app">
     <configuration name="index.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/TasteStar/templates/index.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
@@ -130,8 +135,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.average_star_mango_dining" />
         <item itemvalue="Python.app" />
+        <item itemvalue="Python.average_star_mango_dining" />
         <item itemvalue="JavaScript Debug.listpage.html" />
         <item itemvalue="JavaScript Debug.review.html" />
         <item itemvalue="JavaScript Debug.index.html" />
@@ -179,7 +184,7 @@
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/TasteStar$average_star_mango_dining.coverage" NAME="average_star_mango_dining Coverage Results" MODIFIED="1645949914916" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/scripts" />
     <SUITE FILE_PATH="coverage/TasteStar$test2.coverage" NAME="test2 Coverage Results" MODIFIED="1645852168264" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/99_mingyeong" />
-    <SUITE FILE_PATH="coverage/TasteStar$app.coverage" NAME="app Coverage Results" MODIFIED="1645949874318" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/TasteStar$app.coverage" NAME="app Coverage Results" MODIFIED="1645952259340" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/TasteStar$mangoList.coverage" NAME="mangoList Coverage Results" MODIFIED="1645675172853" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/99_mingyeong" />
     <SUITE FILE_PATH="coverage/TasteStar$update_script.coverage" NAME="update_script Coverage Results" MODIFIED="1645853164821" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/99_mingyeong" />
     <SUITE FILE_PATH="coverage/TasteStar$test3.coverage" NAME="test3 Coverage Results" MODIFIED="1645683435842" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/99_mingyeong" />

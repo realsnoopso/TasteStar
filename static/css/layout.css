@@ -1,0 +1,33 @@
+/*layout.html*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+    margin-top: 56px;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 16px 24px;
+    background-color: #fff !important;
+    z-index: 998;
+}
+
+.contents {
+    width: 100%;
+    max-width: 100%;
+    padding: 80px 36px;
+}
+
+@media screen and (max-width: 576px) {
+    .contents {
+        padding: 48px 36px;
+    }
+}
