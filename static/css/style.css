@@ -17,7 +17,7 @@ body {
     width: 100%;
     padding: 16px 24px;
     background-color: #fff !important;
-    z-index: 999;
+    z-index: 998;
 }
 
 .contents {
@@ -93,15 +93,8 @@ body {
 
 
 /*listpage.html*/
-
-#container {
-    position: relative;
-    width: 100%;
-    height: auto;
-    margin: 0 auto;
-}
-
 #navbar {
+    z-index: 999;
     width: 100%;
     height: 80px;
 }
@@ -114,13 +107,21 @@ body {
     margin: 10px 20px;
 }
 
+.form-floating>.form-select {
+    padding-top: 8px;
+    margin-top: 8px;
+}
+
 .guBox {
-    float: right;
     width: 200px;
     height: 50px;
     line-height: 50px;
     text-align: right;
     margin: 10px 20px;
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    right: 0;
 }
 
 #gulist {
@@ -139,15 +140,16 @@ body {
 }
 
 #list-box {
-    width: 1200px;
-    margin: 120px auto 80px auto;
+    width: 100%;
+    margin: 120px 0;
 }
 
 .list-box {
-    width: 1200px;
-    height: 230px;
-    margin: 30px auto;
-    border-bottom: 1px solid grey;
+    width: 100%;
+    height: 280px;
+    margin: 0px auto;
+    padding: 40px 0;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
 }
 
 .list-box:hover {
@@ -193,4 +195,193 @@ body {
 
 .score p {
     margin: 40px 0;
+}
+
+/*review.html*/
+.total_review_count {
+    font-weight: bold;
+    float: left;
+    font-size: 20px;
+    padding: 0;
+}
+
+ul li {
+    max-width: 1000px;
+    padding-right: 5px;
+    list-style-type: none;
+    float: right;
+    margin: auto;
+    font-size: 20px;
+}
+
+.review_box {
+    width: 100%;
+    margin: 32px auto 0px auto;
+}
+
+.review_box > div > textarea {
+    background-color: rgba(0,0,0,0.025);
+}
+
+.textarea-label {
+    color: rgba(0,0,0,0.6)
+}
+
+.review_box > div {
+    margin-bottom: 16px;
+}
+
+.review_box > button {
+    margin-top: 12px;
+}
+
+.list-group {
+    margin: auto;
+    width: 800px;
+    padding-top: 150px;
+    position: static !important;
+    width: 100%;
+}
+
+
+.list-group-flush>.list-group-item {
+    padding: 20px 0;
+    border-top: 1px solid rgba(0,0,0,0.1);
+    border-bottom: 0px solid black;
+}
+
+.header {
+    height: fit-content;
+}
+
+.header_detail_reaction {
+    height: 38px;
+}
+
+.each_detail_reaction {
+    float: right;
+    margin: auto;
+}
+
+.review-score {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+}
+
+.review-score > div {
+    padding-right: 16px;
+}
+
+/* 이진서-css */
+.contents {
+    word-wrap: break-word;
+    font-size: 100%;
+    line-height: 100%;
+    -webkit-text-size-adjust: 100%;
+    word-break: keep-all;
+    margin: 0;
+    padding: 0;
+    -webkit-tap-highlight-color: transparent;
+    display: block;
+    padding-top: 61px;
+    position: relative;
+}
+
+.column-contents {
+    border: 0 none;
+    height: fit-content;
+    width: 100%;
+    background-color: #fff;
+    flex: 1;
+    box-sizing: border-box;
+    font-size: 100%;
+}
+
+.restaurant_info {
+    padding: 0 0 56px 0;
+}
+
+.restaurant-score {
+    margin-bottom: 56px;
+}
+
+.restaurant-score > h4 {
+    margin-bottom: 12px;
+}
+
+.img-detail {
+    height: 100%;
+    float:left;
+    background-size: cover;
+}
+
+.img-detail > div {
+    width: 100%;
+    height: 100%;
+}
+
+.restaurant_name {
+    -webkit-box-direction: normal;
+    color: #000000;
+    line-height: 46px;
+    margin: 0;
+    padding: 0;
+    -webkit-tap-highlight-color: transparent;
+    border: 0 none;
+    font-size: 100%;
+    font-weight: normal;
+    display: inline-block;
+    max-width: 100%;
+    word-break: break-all;
+}
+
+.column-contents > table > tbody > tr > th {
+    word-wrap: break-word;
+    -webkit-text-size-adjust: 100%;
+    word-break: keep-all;
+    border-collapse: collapse;
+    border-spacing: 0;
+    margin: 0;
+    -webkit-tap-highlight-color: transparent;
+    font-weight: normal;
+    width: 110px;
+    color: rgba(79, 79, 79, 0.6);
+    line-height: 1.7;
+    text-align: left;
+    vertical-align: top;
+    padding-right: 10px;
+    padding-bottom: 5px;
+}
+
+.column-contents > table > tbody > tr > td {
+    word-wrap: break-word;
+    -webkit-text-size-adjust: 100%;
+    word-break: keep-all;
+    border-collapse: collapse;
+    border-spacing: 0;
+    margin: 0;
+    padding: 0;
+    -webkit-tap-highlight-color: transparent;
+    font-size: .9rem;
+    color: #4f4f4f;
+    line-height: 1.7;
+    text-align: left;
+    vertical-align: middle;
+    padding-bottom: 5px;
+}
+
+.restaurant-photos {
+    -webkit-tap-highlight-color: transparent;
+    border: 0 none;
+    position: relative;
+    -webkit-backface-visibility: hidden;
+    width: 100%;
+    height: 200px;
+    left: 0px;
+    display: block;
+    transition: all 0ms ease 0s;
+    transform: translate3d(0px, 0px, 0px);
+    margin: 0;
 }

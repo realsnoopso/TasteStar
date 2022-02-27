@@ -45,8 +45,8 @@ def district() :
 ## 태성 code ##
 @app.route('/detail/resDetail', methods=["GET"])
 def detailPage():
-   id = request.args.get('id');
-   return render_template('review.html', id = json.dumps(id))
+    id = request.args.get('id')
+    return render_template('review.html', id = id)
 
 @app.route("/resDetail", methods=["GET"])
 def res_Detail():

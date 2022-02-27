@@ -5,57 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3b7307eb-590e-4abc-bcf6-b68b0ddae758" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/scripts/average_star_mango_dining.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scripts/db_dining_insert.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/listpage.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/99_mingyeong/Test.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/99_mingyeong/app.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/99_mingyeong/district.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/99_mingyeong/mangoDetail.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/99_mingyeong/mangoList.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/99_mingyeong/map.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/99_mingyeong/script.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/99_mingyeong/test3.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/99_mingyeong/testtest.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/99_mingyeong/update.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/99_mingyeong/update_script.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/static/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/district/dobong.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/district/dongdaemun.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/district/dongjak.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/district/eunpyeong.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/district/gangbuk.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/district/gangdong.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/district/gangnam.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/district/gangseo.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/district/geumcheon.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/district/guro.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/district/gwanak.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/district/gwangjin.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/district/jongno.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/district/jung.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/district/jungnang.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/district/mapo.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/district/nowon.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/district/seocho.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/district/seodaemun.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/district/seongbuk.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/district/seongdong.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/district/songpa.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/district/yangcheon.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/district/yeongdeungpo.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/district/yongsan.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/layout-district.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/layout.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/layout.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/listpage.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/listpage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/review.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/review.html" afterDir="false" />
     </list>
-    <list id="200b7df5-6afb-4e64-ba0e-5450391ebfe6" name="Changes by 82104" comment="" />
-    <list id="e985d13c-0ee1-4400-99ac-0f4187abdf75" name="Changes by owner" comment="">
-      <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
-    </list>
-    <list id="73c44393-89e1-4181-b9ed-eeb85871ae85" name="Changes by user" comment="">
-      <change beforePath="$PROJECT_DIR$/scripts/db_mango_update.py" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/db_mango_update.py" afterDir="false" />
+    <list id="8ebe70ee-6db9-413b-a7c2-f9ac51056578" name="Changes by 82104" comment="">
+      <change beforePath="$PROJECT_DIR$/templates/review.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/review.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,20 +46,42 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="LineStatusTrackerManager">
-    <file path="$PROJECT_DIR$/app.py">
+    <file path="$PROJECT_DIR$/templates/review.html">
       <ranges>
-        <range start1="1" end1="2" start2="1" end2="5" changelist="3b7307eb-590e-4abc-bcf6-b68b0ddae758" />
-        <range start1="16" end1="76" start2="19" end2="23" changelist="3b7307eb-590e-4abc-bcf6-b68b0ddae758" />
-        <range start1="77" end1="80" start2="24" end2="43" changelist="3b7307eb-590e-4abc-bcf6-b68b0ddae758" />
-        <range start1="81" end1="84" start2="44" end2="49" changelist="3b7307eb-590e-4abc-bcf6-b68b0ddae758" />
-        <range start1="85" end1="88" start2="50" end2="55" changelist="3b7307eb-590e-4abc-bcf6-b68b0ddae758" />
-        <range start1="89" end1="92" start2="56" end2="63" changelist="3b7307eb-590e-4abc-bcf6-b68b0ddae758" />
-        <range start1="93" end1="96" start2="64" end2="69" changelist="3b7307eb-590e-4abc-bcf6-b68b0ddae758" />
-        <range start1="97" end1="100" start2="70" end2="75" changelist="3b7307eb-590e-4abc-bcf6-b68b0ddae758" />
-        <range start1="101" end1="104" start2="76" end2="78" changelist="3b7307eb-590e-4abc-bcf6-b68b0ddae758" />
-        <range start1="105" end1="108" start2="79" end2="86" changelist="3b7307eb-590e-4abc-bcf6-b68b0ddae758" />
-        <range start1="109" end1="116" start2="87" end2="88" changelist="3b7307eb-590e-4abc-bcf6-b68b0ddae758" />
-        <range start1="117" end1="118" start2="89" end2="89" changelist="e985d13c-0ee1-4400-99ac-0f4187abdf75" />
+        <range start1="0" end1="18" start2="0" end2="18" changelist="3b7307eb-590e-4abc-bcf6-b68b0ddae758" />
+        <range start1="19" end1="27" start2="19" end2="22" changelist="3b7307eb-590e-4abc-bcf6-b68b0ddae758" />
+        <range start1="28" end1="35" start2="23" end2="26" changelist="3b7307eb-590e-4abc-bcf6-b68b0ddae758" />
+        <range start1="36" end1="42" start2="27" end2="30" changelist="3b7307eb-590e-4abc-bcf6-b68b0ddae758" />
+        <range start1="43" end1="47" start2="31" end2="36" changelist="3b7307eb-590e-4abc-bcf6-b68b0ddae758" />
+        <range start1="48" end1="52" start2="37" end2="71" changelist="3b7307eb-590e-4abc-bcf6-b68b0ddae758" />
+        <range start1="53" end1="53" start2="72" end2="77" changelist="3b7307eb-590e-4abc-bcf6-b68b0ddae758" />
+        <range start1="54" end1="60" start2="78" end2="83" changelist="3b7307eb-590e-4abc-bcf6-b68b0ddae758" />
+        <range start1="61" end1="79" start2="84" end2="112" changelist="3b7307eb-590e-4abc-bcf6-b68b0ddae758" />
+        <range start1="80" end1="81" start2="113" end2="114" changelist="8ebe70ee-6db9-413b-a7c2-f9ac51056578" />
+        <range start1="82" end1="84" start2="115" end2="117" changelist="8ebe70ee-6db9-413b-a7c2-f9ac51056578" />
+        <range start1="107" end1="108" start2="140" end2="141" changelist="8ebe70ee-6db9-413b-a7c2-f9ac51056578" />
+        <range start1="115" end1="116" start2="148" end2="149" changelist="8ebe70ee-6db9-413b-a7c2-f9ac51056578" />
+        <range start1="122" end1="124" start2="155" end2="161" changelist="8ebe70ee-6db9-413b-a7c2-f9ac51056578" />
+        <range start1="125" end1="126" start2="162" end2="163" changelist="8ebe70ee-6db9-413b-a7c2-f9ac51056578" />
+        <range start1="127" end1="130" start2="164" end2="170" changelist="8ebe70ee-6db9-413b-a7c2-f9ac51056578" />
+        <range start1="131" end1="133" start2="171" end2="173" changelist="8ebe70ee-6db9-413b-a7c2-f9ac51056578" />
+        <range start1="134" end1="137" start2="174" end2="177" changelist="8ebe70ee-6db9-413b-a7c2-f9ac51056578" />
+        <range start1="138" end1="146" start2="178" end2="186" changelist="8ebe70ee-6db9-413b-a7c2-f9ac51056578" />
+        <range start1="147" end1="152" start2="187" end2="192" changelist="8ebe70ee-6db9-413b-a7c2-f9ac51056578" />
+        <range start1="153" end1="155" start2="193" end2="195" changelist="8ebe70ee-6db9-413b-a7c2-f9ac51056578" />
+        <range start1="156" end1="161" start2="196" end2="201" changelist="8ebe70ee-6db9-413b-a7c2-f9ac51056578" />
+        <range start1="162" end1="167" start2="202" end2="207" changelist="8ebe70ee-6db9-413b-a7c2-f9ac51056578" />
+        <range start1="168" end1="171" start2="208" end2="211" changelist="3b7307eb-590e-4abc-bcf6-b68b0ddae758" />
+        <range start1="174" end1="178" start2="214" end2="217" changelist="3b7307eb-590e-4abc-bcf6-b68b0ddae758" />
+        <range start1="181" end1="185" start2="220" end2="223" changelist="3b7307eb-590e-4abc-bcf6-b68b0ddae758" />
+        <range start1="188" end1="194" start2="226" end2="232" changelist="8ebe70ee-6db9-413b-a7c2-f9ac51056578" />
+        <range start1="195" end1="199" start2="233" end2="237" changelist="8ebe70ee-6db9-413b-a7c2-f9ac51056578" />
+        <range start1="200" end1="214" start2="238" end2="252" changelist="8ebe70ee-6db9-413b-a7c2-f9ac51056578" />
+        <range start1="215" end1="222" start2="253" end2="260" changelist="8ebe70ee-6db9-413b-a7c2-f9ac51056578" />
+        <range start1="223" end1="230" start2="261" end2="268" changelist="8ebe70ee-6db9-413b-a7c2-f9ac51056578" />
+        <range start1="231" end1="238" start2="269" end2="276" changelist="8ebe70ee-6db9-413b-a7c2-f9ac51056578" />
+        <range start1="239" end1="244" start2="277" end2="282" changelist="8ebe70ee-6db9-413b-a7c2-f9ac51056578" />
+        <range start1="245" end1="313" start2="283" end2="294" changelist="3b7307eb-590e-4abc-bcf6-b68b0ddae758" />
       </ranges>
     </file>
   </component>
@@ -135,6 +117,12 @@
     <configuration name="index.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/TasteStar/templates/index.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
+    <configuration name="listpage.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/TasteStar/templates/listpage.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="review.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/TasteStar/templates/review.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
     <configuration name="app" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="TasteStar" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -149,28 +137,6 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/app.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="db_mango_insert" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="TasteStar" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/99_mingyeong" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/scripts/db_mango_insert.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -201,35 +167,13 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="update_script" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="TasteStar" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/99_mingyeong" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/99_mingyeong/update_script.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Python.app" />
+        <item itemvalue="JavaScript Debug.listpage.html" />
+        <item itemvalue="JavaScript Debug.review.html" />
         <item itemvalue="JavaScript Debug.index.html" />
         <item itemvalue="Python.db_mango_update" />
-        <item itemvalue="Python.update_script" />
-        <item itemvalue="Python.db_mango_insert" />
       </list>
     </recent_temporary>
   </component>
@@ -245,7 +189,7 @@
       <workItem from="1645674660073" duration="8972000" />
       <workItem from="1645769402863" duration="17699000" />
       <workItem from="1645828428483" duration="12533000" />
-      <workItem from="1645926732879" duration="6489000" />
+      <workItem from="1645926732879" duration="17031000" />
     </task>
     <servers />
   </component>
@@ -264,6 +208,15 @@
     </option>
   </component>
   <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/app.py</url>
+          <line>25</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
     <watches-manager>
       <configuration name="PythonConfigurationType">
         <watch expression="starMango" language="Python" />
@@ -273,7 +226,7 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/TasteStar$test2.coverage" NAME="test2 Coverage Results" MODIFIED="1645852168264" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/99_mingyeong" />
-    <SUITE FILE_PATH="coverage/TasteStar$app.coverage" NAME="app Coverage Results" MODIFIED="1645936395068" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/TasteStar$app.coverage" NAME="app Coverage Results" MODIFIED="1645944756190" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/TasteStar$mangoList.coverage" NAME="mangoList Coverage Results" MODIFIED="1645675172853" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/99_mingyeong" />
     <SUITE FILE_PATH="coverage/TasteStar$update_script.coverage" NAME="update_script Coverage Results" MODIFIED="1645853164821" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/99_mingyeong" />
     <SUITE FILE_PATH="coverage/TasteStar$test3.coverage" NAME="test3 Coverage Results" MODIFIED="1645683435842" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/99_mingyeong" />
